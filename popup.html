@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Definition Popup</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .popup {
+      background-color: #fff;
+      width: 200px;
+      height: auto;
+    }
+
+    .word {
+      font-weight: bold;
+    }
+
+    .meaning {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .learn-more {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 3px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="popup">
+    <p class="word" id="selectedWord"></p>
+
+    <div class="meaning">
+      <p id="wordMeaning">Loading..</p>
+    </div>
+
+    <a href="#" class="learn-more">Learn More</a>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
