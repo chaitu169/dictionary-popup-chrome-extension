@@ -19,5 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
             meaningElement.innerText = 'Error fetching meaning.';
           });
       }
+
+      // Add event listener to the search button
+      const searchButton = document.getElementById('searchButton');
+      searchButton.addEventListener('click', () => {
+        const query = encodeURIComponent(`${word} means`);
+        const url = `https://www.google.com/search?q=${query}`;
+        chrome.tabs.create({ url });
+      });
     });
   });
